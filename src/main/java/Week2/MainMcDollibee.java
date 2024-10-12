@@ -15,7 +15,8 @@ public class MainMcDollibee {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        new McDollibee();
+        McDollibee mcdo = new McDollibee();
+        mcdo.setVisible(true);
         
     }
     

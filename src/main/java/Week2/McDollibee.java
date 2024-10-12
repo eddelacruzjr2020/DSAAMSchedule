@@ -27,7 +27,6 @@ public class McDollibee extends JFrame implements ActionListener{
     McDollibee(){
         setSize(600, 600);
         setLayout(null);
-        setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         //Adding components
@@ -180,9 +179,12 @@ public class McDollibee extends JFrame implements ActionListener{
                                "Total Cost: $"+totalCost+"");
         }else if(e.getSource() == btnReset){
             txaSummary.setText("");
-            lblBurgerCount.setText("0");
-            lblFriesCount.setText("0");
-            lblSodaCount.setText("0");
+            intburger = 0;
+            lblBurgerCount.setText(String.valueOf(intburger));
+            intfries = 0;
+            lblFriesCount.setText(String.valueOf(intfries));
+            intsoda = 0;
+            lblSodaCount.setText(String.valueOf(intsoda));
             cmbBurger.setSelectedIndex(0);
             cmbFries.setSelectedIndex(0);
             cmbSoda.setSelectedIndex(0);
